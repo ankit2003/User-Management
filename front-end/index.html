@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .user-list, .user-form {
+            margin-bottom: 20px;
+        }
+        .user-form input, .user-form button {
+            display: block;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>User Management</h1>
+    <div class="user-list">
+        <h2>Users</h2>
+        <ul id="users"></ul>
+    </div>
+    <div class="user-form">
+        <h2>Add User</h2>
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="password" placeholder="Password">
+        <input type="text" id="profession" placeholder="Profession">
+        <button onclick="addUser()">Add User</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
